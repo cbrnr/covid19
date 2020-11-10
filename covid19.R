@@ -106,6 +106,6 @@ covid <- left_join(covid, tests, by=c("Time"="Meldedat", "Bundesland"="Bundeslan
 
 plot_new_infections(covid %>% filter(Bundesland == "Österreich"))
 plot_new_infections(covid %>% filter(Bundesland != "Österreich"))
-plot_positive_tests(covid %>% filter(Bundesland == "Österreich")) + coord_cartesian(ylim=c(0, 0.15))
+plot_positive_tests(covid %>% filter(Bundesland == "Österreich")) + coord_cartesian(ylim=c(0, 0.25))
 plot_7day_incidence(covid %>% filter(Bundesland != "Österreich"))
 plot_7day_incidence(covid %>% filter(Bundesland == "Österreich"))
